@@ -13,6 +13,6 @@ namespace Calculator.Core
         public double Divide(double a, double b) => b == 0 ? throw new DivideByZeroException("Cannot divide by zero.") : a / b;
         public double Multiply(double a, double b) => a * b;
         public double PowerOf(double a, double b) => Math.Pow(a, b);
-        public double SquareRoot(double a) => a < 0 ? throw new ArgumentException("Cannot calculate square root of a negative number.") : Math.Sqrt(a);
+        public double SquareRoot(double a) => a < 0 ? throw new ArgumentException("Cannot square root a negative number.") : Math.Sqrt(a);
     }
 }

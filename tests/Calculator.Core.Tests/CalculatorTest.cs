@@ -1,4 +1,6 @@
-﻿namespace Calculator.Test
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Calculator.Test
 {
     [TestClass]
     public sealed class CalculatorTest
