@@ -4,6 +4,7 @@ builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<Calculator.Core.Calculator>();
 
 var app = builder.Build();
 
