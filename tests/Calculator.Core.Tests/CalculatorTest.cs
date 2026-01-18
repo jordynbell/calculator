@@ -132,7 +132,7 @@ namespace Calculator.Test
             // Actual + Assert 1
             var ex = Assert.ThrowsException<ArgumentException>(() => calculator.SquareRoot(-4));
             // Assert 2
-            Assert.AreEqual("Cannot calculate square root of a negative number.", ex.Message);
+            Assert.AreEqual("Cannot square root a negative number.", ex.Message);
         }
     }
 }
